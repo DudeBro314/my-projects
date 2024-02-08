@@ -7,16 +7,6 @@ CreateTermList = lambda sequence: [bool(value) for value in sequence]
 CloneChars = lambda chars, terms: "".join([chars[i] for i in range(len(terms)) if terms[i]])
 
 
-def ProcessPwd(pwd, string):
-    for i in range(len(pwd) - 1):
-        if pwd[i] == pwd[i + 1]:
-            char = string[randint(0, len(string) - 1)]
-            while pwd.count(char) != 0:
-                char = string[randint(0, len(string) - 1)]
-            pwd = pwd[:i + 1] + char + pwd[i + 2:]
-    return pwd
-
-
 def MixSequence(sequence, repeat=1):
     for reps in range(repeat):
         shuffle(sequence)

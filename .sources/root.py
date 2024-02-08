@@ -27,10 +27,6 @@ def RButton(): # Reverse pwd button
     lbl1["text"] = lbl1.cget(key="text")[::-1]
 
 
-def PButton(): # Process pwd button
-    lbl1["text"] = ProcessPwd(lbl1.cget(key="text"), CloneChars(chars, CollectWidgets()))
-
-
 root.title(strings[0])
 root.geometry("400x200+1000+200")
 root.resizable(False, False)
@@ -46,8 +42,6 @@ btn1 = gui.Button(text=strings[7], activebackground="red", activeforeground="yel
 btn2 = gui.Button(text=strings[8], activebackground="blue", activeforeground="yellow", height=2, width=4, command=MButton).place(x=200, y=50)
 
 btn3 = gui.Button(text=strings[9], activebackground="green", activeforeground="yellow", height=2, width=4,command=RButton).place(x=250, y=50)
-
-btn4 = gui.Button(text="HUI", command=PButton).place(x=300, y=50)
 
 #btn4 = gui.Button(text=strings[9], activebackground="green", activeforeground="yellow", height=2, width=4,command=RDButton).place(x=300, y=50)
 
