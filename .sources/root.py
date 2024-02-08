@@ -39,7 +39,7 @@ icon = gui.PhotoImage(file=".dependencies\Elite-icon.png")
 root.iconphoto(False, icon)
 
 lbl1 = gui.Label(text=" ", width=30, font="bold")
-lbl1.place(x=10, y=10)
+lbl1.place(x=10, y=10) # Вынужденное решениеz
 
 btn1 = gui.Button(text=strings[7], activebackground="red", activeforeground="yellow", height=2, command=GButton).place(x=120, y=50)
 
