@@ -1,0 +1,10 @@
+Password generator
+English(up)
+English(low)
+Numbers
+Symbols
+Cyryllic(up)
+Cyryllic(low)
+Generate
+Mix
+Flip
