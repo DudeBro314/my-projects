@@ -33,13 +33,13 @@ def PButton(): # Process pwd button
 
 root.title(strings[0])
 root.geometry("400x200+1000+200")
-#root.resizable(False)
+root.resizable(False, False)
 root.configure(bg="gray")
 icon = gui.PhotoImage(file=".dependencies\Elite-icon.png")
 root.iconphoto(False, icon)
 
 lbl1 = gui.Label(text=" ", width=30, font="bold")
-lbl1.place(x=10, y=10) # Вынужденное решениеz
+lbl1.place(x=10, y=10)
 
 btn1 = gui.Button(text=strings[7], activebackground="red", activeforeground="yellow", height=2, command=GButton).place(x=120, y=50)
 
